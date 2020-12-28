@@ -10,7 +10,7 @@ document.getElementById("clear_button").addEventListener("click", function() {
 document.getElementById("search").addEventListener('input', function() {
   document.getElementById("results").innerHTML = "";
   var query = document.getElementById("search").value
-  var url = "http://www.omdbapi.com/?s=" + query + "&plot=full&apikey=3680be5c";
+  var url = "https://www.omdbapi.com/?s=" + query + "&plot=full&apikey=3680be5c";
   var aj = new XMLHttpRequest();
   aj.open("GET", url, true);
   aj.send();
