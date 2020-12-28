@@ -1,3 +1,5 @@
+alert("TEST")
+
 
 document.getElementById("clear_button").addEventListener("click", function() {
   document.getElementById("search").value = "";
