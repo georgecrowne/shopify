@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title></title>
+  </head>
+  <body>
+    <div class="row">
+      <div class="header">
+        <a href="https://www.shopify.ca/">
+          <img src="shopify.png" class="logo" alt="Shopify">
+        </a>
+        <h1>The Shoppies</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6 left-col">
+        <div class="row justify-content-md-center">
+          <div class="col-7">
+            <div class="search_bar" id="search_bar">
+              <img id="search_icon" src="search.png" class="search_icon">
+              <input class="search_input" autocomplete="off" id="search" placeholder="Search for Movies...">
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="clear_button" id="clear_button">
+              <h4 class="clear_text">Clear</h4>
+            </div>
+          </div>
+        </div>
+        <div class="results" id="results"">
+        </div>
+      </div>
+      <div class="col-6" id="selected">
+        <h2>Your Nominations:</h2>
+        <div class="row">
+          <div class="col">
+            <div class="nominated_empty" id="nominated_1">
+              <h2 class="number">1</h2>
+            </div>
+          </div>
+          <div class="col">
+            <div class="nominated_empty" id="nominated_2">
+              <h2 class="number">2</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="nominated_empty" id="nominated_3">
+              <h2 class="number">3</h2>
+            </div>
+          </div>
+          <div class="col">
+            <div class="nominated_empty" id="nominated_4">
+              <h2 class="number">4</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="nominated_bottom_empty" id="nominated_5">
+              <h2 class="number">5</h2>
+            </div>
+          </div>
+          <div class="col">
+            <div class="submit_button_disabled" id="submit">
+              <h5 class="submit_text" id="submit_text">
+                Nominate 5 more movie(s)!
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="exampleModal-lg" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content" id="modal_content">
+          <div class="modal-body" id="modal_body">
+            <div class="row">
+              <div class="col">
+                <img src="" class="poster_image" id="poster_image">
+              </div>
+              <div class="col" style="text-align: center;">
+                <h1 id="modal_movie_title"></h1>
+                <div class="modal_horizontal_divider"></div>
+                <h4 id="modal_movie_director"></h4>
+                <div class="modal_horizontal_divider"></div>
+                <h4 id="actors"></h4>
+                <div class="modal_horizontal_divider"></div>
+                <h4 id="genres"></h4>
+                <h4 id=rated></h4>
+              </div>
+              <div class="col" style="text-align: center;">
+                <div class="modal_box">
+                  <h4 id="modal_movie_rating1"></h4>
+                  <h4 id="modal_movie_rating2"></h4>
+                  <h4 id="modal_movie_rating3"></h4>
+                </div>
+                <div class="modal_box">
+                  <h4 id="released"></h4>
+                  <h4 id="boxOffice"></h4>
+                  <h4 id="runtime"></h4>
+                </div>
+                <div class="modal_box">
+                  <p class="modal_plot" id="plot"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button id="modal_close" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" id="modal_nomiate" class="btn btn-primary" data-dismiss="modal">Nomiate</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="modal_header">
+              <h2>Thank you for Nominating!</h2>
+            </div>
+            <div class="nominations" id="nominations">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <a href="thanks.html" type="button" class="btn btn-primary">Submit Nominations</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </body>
+  <script src="script.js"></script>
+</html>
