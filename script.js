@@ -90,7 +90,7 @@ document.getElementById("modal_nomiate").addEventListener("click", function() {
 function fillmodal(id) {
   var id = id.substring(7)
   console.log(id)
-  var url = "http://www.omdbapi.com/?i=" + id + "&apikey=3680be5c";
+  var url = "https://www.omdbapi.com/?i=" + id + "&apikey=3680be5c";
   var aj = new XMLHttpRequest();
   aj.open("GET", url, true);
   aj.send();
