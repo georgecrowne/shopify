@@ -1,6 +1,4 @@
 
-
-
 document.getElementById("clear_button").addEventListener("click", function() {
   document.getElementById("search").value = "";
   document.getElementById("results").innerHTML = "";
